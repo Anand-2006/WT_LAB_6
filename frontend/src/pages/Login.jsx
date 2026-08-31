@@ -20,15 +20,26 @@ export default function Login() {
   };
 
   return (
-    <div className="container">
-      <form onSubmit={handleSubmit}>
-        <h2>Login</h2>
-        {error && <p className="error">{error}</p>}
-        <input type="email" placeholder="Email" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} required />
-        <input type="password" placeholder="Password" value={form.password} onChange={(e) => setForm({ ...form, password: e.target.value })} required />
-        <button type="submit">Login</button>
-        <p>No account? <Link to="/register">Register</Link></p>
-      </form>
+    <div className="auth-page">
+      <div className="auth-card">
+        <div className="auth-mark">Bookstore</div>
+        <form onSubmit={handleSubmit}>
+          <h2 style={{ animationDelay: '0.05s' }}>Welcome back</h2>
+          {error && <p className="error">{error}</p>}
+          <input
+            style={{ animationDelay: '0.12s' }}
+            type="email" placeholder="Email" value={form.email}
+            onChange={(e) => setForm({ ...form, email: e.target.value })} required
+          />
+          <input
+            style={{ animationDelay: '0.19s' }}
+            type="password" placeholder="Password" value={form.password}
+            onChange={(e) => setForm({ ...form, password: e.target.value })} required
+          />
+          <button style={{ animationDelay: '0.26s' }} type="submit">Login</button>
+          <p style={{ animationDelay: '0.32s' }}>No account? <Link to="/register">Register</Link></p>
+        </form>
+      </div>
     </div>
   );
 }

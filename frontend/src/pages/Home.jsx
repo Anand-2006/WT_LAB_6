@@ -10,21 +10,35 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="container">
-      <h1>Welcome to the Bookstore</h1>
-      <p style={{ margin: '1rem 0', color: '#555' }}>Browse our featured picks below.</p>
-      <div className="grid">
-        {books.map((book) => (
-          <Link key={book.id} to={`/catalogue`} className="card" style={{ textDecoration: 'none', color: 'inherit' }}>
-            <img src={book.image_url} alt={book.title} />
-            <div className="card-body">
-              <h3>{book.title}</h3>
-              <p>{book.author}</p>
-              <span className="price">₹{book.price}</span>
-            </div>
-          </Link>
-        ))}
+    <>
+      <section className="hero">
+        <div className="hero-inner">
+          <h1>Books worth staying up for.</h1>
+          <p>A small, carefully stocked catalogue — search, browse by category, and check out in a minute.</p>
+          <div className="hero-rule" />
+        </div>
+      </section>
+
+      <div className="container">
+        <h2 className="section-label">Featured this week</h2>
+        <div className="grid">
+          {books.map((book, i) => (
+            <Link
+              key={book.id}
+              to="/catalogue"
+              className="card"
+              style={{ textDecoration: 'none', color: 'inherit', animationDelay: `${i * 0.08}s` }}
+            >
+              <img src={book.image_url} alt={book.title} />
+              <div className="card-body">
+                <h3>{book.title}</h3>
+                <p>{book.author}</p>
+                <span className="price">₹{book.price}</span>
+              </div>
+            </Link>
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 }

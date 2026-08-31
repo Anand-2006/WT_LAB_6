@@ -11,7 +11,7 @@ export default function Navbar() {
 
   return (
     <nav className="navbar">
-      <Link to="/" style={{ fontSize: '1.3rem', fontWeight: 700 }}>Bookstore</Link>
+      <Link to="/" className="brand">Bookstore</Link>
       <div>
         <Link to="/catalogue">Catalogue</Link>
         <Link to="/cart">Cart</Link>
