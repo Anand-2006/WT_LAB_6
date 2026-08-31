@@ -65,3 +65,16 @@ INSERT INTO books (title, author, price, stock, category_id, image_url, descript
 ('Dune', 'Frank Herbert', 350.00, 15, 2, 'https://covers.openlibrary.org/b/isbn/0441013597-L.jpg', 'Epic sci-fi saga on the desert planet Arrakis.'),
 ('Sapiens', 'Yuval Noah Harari', 420.00, 10, 3, 'https://covers.openlibrary.org/b/isbn/0062316095-L.jpg', 'A brief history of humankind.'),
 ('1984', 'George Orwell', 250.00, 25, 1, 'https://covers.openlibrary.org/b/isbn/0451524934-L.jpg', 'Dystopian classic on surveillance and control.');
+('The Hobbit', 'J.R.R. Tolkien', 380.00, 18, 1, 'https://covers.openlibrary.org/b/isbn/0261102217-L.jpg', 'A reluctant hobbit sets out on an unexpected journey.'),
+('To Kill a Mockingbird', 'Harper Lee', 340.00, 22, 1, 'https://covers.openlibrary.org/b/isbn/0061120081-L.jpg', 'A story of racial injustice in the American South.'),
+('The Great Gatsby', 'F. Scott Fitzgerald', 299.00, 20, 1, 'https://covers.openlibrary.org/b/isbn/0743273567-L.jpg', 'Wealth, love, and the decay of the American dream.'),
+('Foundation', 'Isaac Asimov', 410.00, 14, 2, 'https://covers.openlibrary.org/b/isbn/0553293354-L.jpg', 'A mathematician predicts the fall of a galactic empire.'),
+('Neuromancer', 'William Gibson', 360.00, 12, 2, 'https://covers.openlibrary.org/b/isbn/0441569595-L.jpg', 'The novel that defined the cyberpunk genre.'),
+('Brave New World', 'Aldous Huxley', 320.00, 16, 2, 'https://covers.openlibrary.org/b/isbn/0060850523-L.jpg', 'A dystopia built on comfort, control, and conditioning.'),
+('Educated', 'Tara Westover', 450.00, 10, 3, 'https://covers.openlibrary.org/b/isbn/0399590501-L.jpg', 'A memoir on self-invention through education.'),
+('Atomic Habits', 'James Clear', 399.00, 30, 3, 'https://covers.openlibrary.org/b/isbn/0735211299-L.jpg', 'A practical guide to building better habits.'),
+('Thinking, Fast and Slow', 'Daniel Kahneman', 480.00, 12, 3, 'https://covers.openlibrary.org/b/isbn/0374533555-L.jpg', 'How two systems of thought shape our judgment.'),
+('Clean Code', 'Robert C. Martin', 550.00, 15, 4, 'https://covers.openlibrary.org/b/isbn/0132350882-L.jpg', 'A handbook of agile software craftsmanship.'),
+('Designing Data-Intensive Applications', 'Martin Kleppmann', 650.00, 8, 4, 'https://covers.openlibrary.org/b/isbn/1449373321-L.jpg', 'The big ideas behind reliable, scalable data systems.'),
+('Cracking the Coding Interview', 'Gayle Laakmann McDowell', 520.00, 25, 4, 'https://covers.openlibrary.org/b/isbn/0984782857-L.jpg', '189 programming questions and solutions.');
+ 
